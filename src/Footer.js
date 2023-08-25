@@ -1,11 +1,10 @@
 import React from 'react';
+import FooterImg from './icons_assets/Logo.svg';
 
 function Footer() {
   return (
-    <footer>
-        <div className="copyright">
-        2023 Little Lemon. All rights reserved.
-      </div>
+    <footer className='footer'>
+      <img src={FooterImg} alt="Footer"></img>
       <ul className="Navigation">
         <p>Navigation</p>
         <li><a href="/home">Home</a></li>
@@ -19,14 +18,13 @@ function Footer() {
         <p>Social Media</p>
         <li><a href="https://facebook.com/littlelemon">Facebook</a></li>
         <li><a href="https://twitter.com/littlelemon">Twitter</a></li>
-        {/* ... other social media links */}
       </ul>
-      <div className="Contact">
+      <ul className="Contact">
       <p>Contact</p>
-        <p>Address: 123 Little Lemon</p>
-        <p>Email us at: <a href="mailto:info@littlelemon.com">info@littlelemon.com</a></p>
-        Call Us: <a href="tel:12355555555">123-555-5555</a>
-      </div>
+        <li>Address: 123 Little Lemon</li>
+        <li>Email us at: <a href="mailto:info@littlelemon.com">info@littlelemon.com</a></li>
+        <li>Call Us: <a href="tel:12355555555">123-555-5555</a></li>
+      </ul>
     </footer>
   );
 }

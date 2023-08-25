@@ -6,6 +6,106 @@
   height: 40vmin;
   pointer-events: none;
 }
+:root {
+  --primary-color-1: #495E57;
+  --primary-color-2: #F4CE14;
+  --secondary-color-1: #EE9972;
+  --secondary-color-2: #FBDABB;
+  --secondary-color-3: #EDEFEE;
+  --secondary-color-4: #333333;
+}
+h1 {
+  font-family: 'Markazi Text', serif;
+  font-weight: 500; /* Medium */
+  font-size: 64pt;
+}
+
+h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt; /* Assuming Regular */
+}
+
+p.lead-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 18pt;
+}
+
+h3 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 800; /* Extra Bold */
+  text-transform: uppercase;
+  font-size: 20pt;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0px;
+  padding: 20px;
+  align-items: center;
+}
+.nav {
+  display: grid;
+  grid-template-columns:  repeat(6, auto); /* gives more space to last three items */
+  justify-content: space-between;
+  text-align: center;
+  grid-column: 5/11;
+}
+
+.nav li:first-child {
+  margin-left: 0;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.footer ul {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+.footer img {
+  grid-column: 2 / 3;
+  max-width: 100px;
+  margin-right: 20px; /* Space between the image and the element to right */
+}
+.Navigation {
+  grid-column: 3 / 4;
+}
+
+.social-media {
+  grid-column: 4 / 5;
+}
+
+.Contact {
+  grid-column: 5 / 6;
+}
+.footer li {
+  list-style-type: none;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.logo{
+  grid-column: 3/4;
+}
+
+
+.nav li {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  margin-left: 5px;  /* Adjust as needed */
+  margin-right: 5px; /* Adjust as needed */
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
