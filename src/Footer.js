@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterImg from './icons_assets/Logo.svg';
+import FooterImg from './icons_assets/Mario_and_Adrian_b.jpg';
 
 function Footer() {
   return (
