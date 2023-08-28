@@ -1,0 +1,641 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+:root {
+  --primary-color-1: #495E57;
+  --primary-color-2: #F4CE14;
+  --secondary-color-1: #EE9972;
+  --secondary-color-2: #FBDABB;
+  --secondary-color-3: #EDEFEE;
+  --secondary-color-4: #333333;
+}
+
+
+
+.testimonials-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.testimonial {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  height: auto;
+  text-align: center;
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.star-rating {
+  color: gold;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.testimonial-comment {
+  font-style: italic;
+  margin: 10px 0;
+  color: black;
+
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: black;
+}
+.about-chicago h2 {
+  color: black;
+}
+.about-chicago p {
+  color: black;
+}
+@media screen and (max-width: 768px) { /* Adjust 768px to your breakpoint */
+    .footer a{
+      text-decoration: none;
+      color: black;
+    }
+    .footer img {
+      grid-column: 2 / 3;
+      max-width: 200px;
+      margin-right: 20px; /* Space between the image and the element to right */
+    }
+    .footer li {
+      list-style-type: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .footer p {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  .nav li {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    margin-left: 5px;  /* Adjust as needed */
+    margin-right: 5px; /* Adjust as needed */
+  }
+  h1 {
+    font-family: 'Markazi Text', serif;
+    font-weight: 500; /* Medium */
+    font-size: 30pt;
+    color: #F4CE14;
+    margin-bottom: -30px;
+
+  }
+  .logo{
+    padding-left: 10px;
+    grid-column: 1/2;
+  }
+  .cards-specials {
+    grid-template-columns: 1fr;
+  }
+  .Home{
+    grid-template-columns: 1fr;
+    background-color: #495E57;
+    position: relative;
+    top: 0;
+    height: 300px;
+    width: 100%;
+  }
+  .image-content {
+    max-width: 250px;
+  }
+  .nav{
+    grid-template-columns: 1fr; /* Stack items */
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+    grid-column: 2;
+    font-family: 'Arial', sans-serif;
+  }
+ .container{
+  display: grid;
+  grid-template-columns: 1fr; /* Stack items */
+  gap: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  align-items: center;
+ }
+ h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 20pt; /* Assuming Regular */
+  color: white;
+  margin-bottom: -10px;
+}
+
+p {
+  color: white;
+  font-size: 10pt; /* Assuming Regular */
+  padding-right: 10px;
+}
+p.lead-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 12pt;
+}
+
+h3 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 800; /* Extra Bold */
+  text-transform: uppercase;
+  font-size: 10pt;
+
+}
+.cta-btn {
+  background-color: #F4CE14;
+  color: #333333; /* assuming dark text on a yellowish background */
+  padding: 5px 10px ;
+  border: none;
+  border-radius: 4px;
+  font-size: 12pt;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #dbb512;
+}
+
+.cta-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(244, 206, 20, 0.5);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.text-content {
+  grid-column: 3/6;
+  align-self: start;
+  padding-left: 10px;
+}
+.nav li
+{
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+.nav li:first-child {
+  margin-left: 0;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+.image-content {
+  width: 150px;
+  height: auto;
+  display: grid;
+  justify-content: center;/* Vertically center the image */
+  grid-column: 6;
+}
+
+.image-content img {
+  max-width: 90%; /* Ensures the image doesn't exceed the column width */
+  height: auto;
+}
+.card {
+  width: 90%;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+    background-color: rgba(255,0,0,0.2); /* Red with opacity for visibility */
+}
+
+.card:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  max-height: 200px;
+  height: 200px; /* add this line */
+  object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-title {
+  width: 100%;
+
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: black;
+}
+
+.card-description {
+  width: 100%;
+
+  margin-top: 10px;
+  color: black;
+
+}
+.Specials .container {
+  display: grid;
+  grid-template-columns: 1fr auto; /*2 columns one for CTA one for h1 text */
+  align-items: start; /* Align to the top, but can adjust with margin */
+  grid-template-rows: auto auto; /* Two rows */
+  padding-right: 10px;
+
+}
+
+h1.specials-text {
+  font-family: 'Markazi Text', serif;
+  font-weight: 500; /* Medium */
+  font-size: 25pt;
+  color: black;
+  grid-row: 1/2; /* Ensures h1 occupies the first row */
+  margin-top: 20px; /* Adjust this value to move the button down as desired */
+  padding-bottom: 40px;
+  padding-left: 10px;
+}
+
+
+.Specials-CTA {
+  align-self: start; /* This aligns the CTA to the top of its cell */
+  margin-top: 100px; /* Adjust this value to move the CTA down as desired */
+  margin-left: 100px; /* Adjust this value to move the CTA left as desired */
+}
+
+.Specials {
+  position: relative;
+}
+.booking-page {
+  padding: 1rem;
+}
+
+.booking-page h2 {
+  font-size: 1.5rem;
+}
+
+.booking-page form {
+  padding: 0 1rem;
+}
+
+.booking-page label {
+  font-size: 1rem;
+}
+
+.booking-page input,
+.booking-page button {
+  font-size: 0.9rem;
+}
+
+.booking-page button {
+  padding: 0.6rem 1rem;
+}
+}
+
+@media screen and (min-width: 768px) { /* Adjust 768px to your breakpoint */
+  .booking-page {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Adjust as necessary */
+    margin: 0 auto;
+}
+
+.booking-page h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    grid-column: 1 / -1;
+}
+
+.booking-page form {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1rem;
+}
+
+.booking-page label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.booking-page input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.booking-page button {
+    padding: 0.7rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-page button:hover {
+    background-color: #555;
+}
+
+  .footer a{
+    text-decoration: none;
+    color: black;
+  }
+  .image-content {
+    width: 450px;
+    height: auto;
+    display: grid;
+    justify-content: center;/* Vertically center the image */
+    grid-column: 7/11;
+  }
+
+  .image-content img {
+    max-width: 100%; /* Ensures the image doesn't exceed the column width */
+    height: auto;
+  }
+  .nav li
+{
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+.nav li:first-child {
+  margin-left: 0;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.footer ul {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+.footer img {
+  grid-column: 2 / 3;
+  max-width: 300px;
+  margin-right: 20px; /* Space between the image and the element to right */
+}
+.Navigation {
+  grid-column: 3 / 4;
+}
+
+.social-media {
+  grid-column: 4 / 5;
+}
+.footer p{
+  color: black;
+}
+.Contact {
+  grid-column: 5 / 6;
+}
+.footer li {
+  list-style-type: none;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+  h1 {
+    font-family: 'Markazi Text', serif;
+    font-weight: 500; /* Medium */
+    font-size: 64pt;
+    color: #F4CE14;
+    margin-bottom: -50px;
+  }
+  .Specials .container {
+    display: grid;
+    grid-template-columns: 1fr auto; /*2 columns one for CTA one for h1 text */
+    align-items: start; /* Align to the top, but can adjust with margin */
+    grid-template-rows: auto auto; /* Two rows */
+  
+  }
+  .cards-specials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  
+  h1.specials-text {
+    font-family: 'Markazi Text', serif;
+    font-weight: 500; /* Medium */
+    font-size: 64pt;
+    color: black;
+    grid-row: 1; /* Ensures h1 occupies the first row */
+    margin-top: 100px; /* Adjust this value to move the button down as desired */
+    padding-bottom: 40px;
+  }
+  
+  
+  .Specials-CTA {
+    align-self: start; /* This aligns the CTA to the top of its cell */
+    margin-top: 100px; /* Adjust this value to move the CTA down as desired */
+    margin-left: 100px; /* Adjust this value to move the CTA left as desired */
+  }
+  
+  .Specials {
+    position: relative;
+  }
+  h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 40pt; /* Assuming Regular */
+    color: white;
+    margin-bottom: -20px;
+  }
+  
+  p {
+    color: white;
+    font-size: 20pt; /* Assuming Regular */
+  }
+  p.lead-text {
+    font-family: 'Karla', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 18pt;
+  }
+  
+  h3 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800; /* Extra Bold */
+    text-transform: uppercase;
+    font-size: 20pt;
+  }
+  .cta-btn {
+    background-color: #F4CE14;
+    color: #333333; /* assuming dark text on a yellowish background */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18pt;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #dbb512;
+  }
+  
+  .cta-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(244, 206, 20, 0.5);
+  }
+  .Home{
+    background-color: #495E57;
+    position: relative;
+    top: 0;
+    height: 600px;
+    width: 100%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  
+  .text-content {
+    grid-column: 3/6;
+    align-self: start;
+  }
+  .logo{
+    grid-column: 3/4;
+  }
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  align-items: center;
+}
+.nav {
+  display: grid;
+  grid-template-columns:  repeat(6, auto);
+  justify-content: space-between;
+  text-align: center;
+  grid-column: 5/11;
+  font-family: 'Arial', sans-serif;
+}
+.card {
+  width: 100%;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+    background-color: rgba(255,0,0,0.2); /* Red with opacity for visibility */
+}
+
+.card:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  max-height: 200px;
+  height: 200px; /* add this line */
+  object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-title {
+  width: 100%;
+
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: black;
+}
+
+.card-description {
+  width: 100%;
+
+  margin-top: 10px;
+  color: black;
+
+}
+.nav li {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  margin-left: 5px;  /* Adjust as needed */
+  margin-right: 5px; /* Adjust as needed */
+}
+}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
