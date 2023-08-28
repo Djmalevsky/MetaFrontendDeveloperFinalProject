@@ -8,12 +8,11 @@ function Nav() {
         <img src={logo} alt="Little Lemon Logo" className="logo" />
 
         <nav className="nav">
-            <li><a href="/home">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/menu">Menu</a></li>
-            <li><a href="/reservations">Reservations</a></li>
-            <li><a href="/order">Order Online</a></li>
-            <li><a href="/login">Login</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/specials">Specials</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="/booking">Booking</a></li>
+            <li><a href="/about-chicago">Chicago</a></li>
         </nav>
     </div>
   );

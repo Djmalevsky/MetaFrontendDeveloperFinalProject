@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer  }  from 'react';
 import Homepage from './Homepage';
 import Specials from './Specials';
 import CustomersSay from './CustomerSay';
@@ -14,7 +14,16 @@ import Testimonial1 from './icons_assets/Testimonial1.jpg';
 import Testimonial2 from './icons_assets/Testimonial2.jpg';
 import Testimonial3 from './icons_assets/Testimonial3.jpg';
 import CallToAction from './CallToAction';
+export function initializeTimes() {
+  return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+}
+
+export function updateTimes(currentTimes, action) {
+  return currentTimes;
+}
+
 function Main() {
+  
   const testimonialData = [
     {
       id: 1,
@@ -56,16 +65,19 @@ function Main() {
           description: 'Our Bruchetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.'
         },
       ];
+      const [availableTimes, dispatch] = useReducer(updateTimes, null, initializeTimes);
+
   return (
     <Router>
     <main>
+      
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/hero" element={<CallToAction />} />
         <Route path="/specials" element={<Specials items={specialsData} />} />
         <Route path="/testimonials" element={<CustomersSay testimonials={testimonialData} />} />
         <Route path="/about-chicago" element={<Chicago />} />
-        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} />} />
         {/* You can continue adding more routes as needed */}
       </Routes>
 
